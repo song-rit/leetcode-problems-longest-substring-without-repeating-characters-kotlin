@@ -12,7 +12,7 @@ class Solution {
             return subStringCount
         }
 
-        var asciiTable = IntArray(128)
+        var asciiTable = IntArray(127)
         var cursor = 0
         while (cursor < size) {
             var subStringCountTemp = 0
@@ -29,7 +29,7 @@ class Solution {
             if (subStringCount < subStringCountTemp) {
                 subStringCount = subStringCountTemp
             }
-            asciiTable = IntArray(128)
+            asciiTable = IntArray(127)
             cursor++
         }
         return subStringCount
