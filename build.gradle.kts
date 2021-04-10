@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.objects.NativeRegExp.test
-
 plugins {
     java
     kotlin("jvm") version "1.4.32"
