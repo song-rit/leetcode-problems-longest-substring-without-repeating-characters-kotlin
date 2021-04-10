@@ -14,7 +14,8 @@ internal class SolutionTest {
             Arguments.of("bbbbb", 1),
             Arguments.of("pwwkew", 3),
             Arguments.of("", 0),
-
+            Arguments.of("s", 1),
+            Arguments.of("test", 3)
         )
     }
 
