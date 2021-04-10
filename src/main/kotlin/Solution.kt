@@ -12,24 +12,24 @@ class Solution {
             return subStringCount
         }
 
-        var asciiTable = IntArray(127)
+        var asciiTable = BooleanArray(127)
         var cursor = 0
         while (cursor < size) {
             var subStringCountTemp = 0
             var findCursor = cursor
             while (findCursor < size) {
                 val asciiNumber = chars[findCursor].toInt()
-                if (asciiTable[asciiNumber] == 1) {
+                if (asciiTable[asciiNumber] == true) {
                     break
                 }
-                asciiTable[asciiNumber] = 1
+                asciiTable[asciiNumber] = true
                 subStringCountTemp++
                 findCursor++
             }
             if (subStringCount < subStringCountTemp) {
                 subStringCount = subStringCountTemp
             }
-            asciiTable = IntArray(127)
+            asciiTable = BooleanArray(127)
             cursor++
         }
         return subStringCount
