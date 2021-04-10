@@ -6,20 +6,20 @@ Given a string s, find the length of the longest substring without repeating cha
 ## Example Case
 
 Example Case 1:
->Input: s = "abcabcbb"\
->Output: 3
+>Input: s = `"abcabcbb"`\
+>Output: `3`
 
 Example Case 2:
->Input: s = "bbbbb"\
->Output: 1
+>Input: s = `"bbbbb"`\
+>Output: `1`
 
 Example Case 3:
->Input: s = "pwwkew"\
->Output: 3
+>Input: s = `"pwwkew"`\
+>Output: `3`
 
 Example Case 4:
->Input: s = ""\
->Output: 0
+>Input: s = `""`\
+>Output: `0`
 
 ## Preparement
 * JDK 1.8
